@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Tiger Bags</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Tiger <span>Bags</span></a>
+<button class="menu-toggle" id="menuToggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+<li id="guestMenu">
+    <a href="login.html">Login</a>
+</li>
+
+<li id="guestRegister">
+    <a href="register.html">Register</a>
+</li>
+
+<li id="userMenu" style="display:none;">
+    <a href="profile.html" id="userName"></a>
+</li>
+
+<li id="logoutMenu" style="display:none;">
+    <a href="#" onclick="logoutUser()">Logout</a>
+</li>
+<li>
+<a href="wishlist.html">
+Wishlist (<span id="wishlistCount">0</span>)
+</a>
+</li>
+      <a href="shop.html" class="shop-btn">Shop Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-banner">
+      <p>GET IN TOUCH</p>
+      <h1>Contact Tiger Bags</h1>
+      <span>Ask about products, prices or bulk orders.</span>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-container">
+
+        <div class="contact-info">
+          <p class="small-title">CONTACT DETAILS</p>
+          <h2>We Are Here to Help</h2>
+          <p class="contact-intro">
+            Contact us for product details, latest designs, wholesale rates
+            and orders. We will reply as soon as possible.
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div>
+              <h3>WhatsApp</h3>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h3>Phone</h3>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h3>Store Address</h3>
+              <p>Ambaji, Gujarat, India</p>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/919876543210"
+            target="_blank"
+            class="whatsapp-contact-btn"
+          >
+            Chat on WhatsApp
+          </a>
+        </div>
+
+        <div class="contact-form-box">
+          <h2>Send Us a Message</h2>
+
+          <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="tel" id="phone" placeholder="Your Phone Number" required />
+            <input type="text" id="subject" placeholder="Subject" required />
+            <textarea id="message" placeholder="Write your message..." required></textarea>
+
+            <button type="submit">Send on WhatsApp</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="section-heading">
+        <p>OUR LOCATION</p>
+        <h2>Visit Our Store</h2>
+      </div>
+
+      <div class="map-box">
+        <div class="map-icon">📍</div>
+        <h3>Tiger Bags, Ambaji</h3>
+        <p>Ambaji, Gujarat, India</p>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Ambaji+Gujarat"
+          target="_blank"
+          class="primary-btn"
+        >
+          Open in Google Maps
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Tiger <span>Bags</span></h2>
+    <p>Premium bags for school, travel, office and daily use.</p>
+    <p>© 2026 Tiger Bags. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

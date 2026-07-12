@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | Tiger Bags</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Tiger <span>Bags</span></a>
+      <a href="shop.html" class="shop-btn">View Shop</a>
+    </nav>
+  </header>
+
+  <main class="admin-section">
+    <div class="section-heading">
+      <p>ADMIN PANEL</p>
+      <h1>Manage Products</h1>
+    </div>
+
+    <form id="productForm" class="admin-form">
+      <input type="hidden" id="editIndex">
+
+      <input type="text" id="productName" placeholder="Product Name" required>
+      <input type="number" id="productPrice" placeholder="Price" required>
+
+      <select id="productCategory" required>
+        <option value="">Select Category</option>
+        <option value="School Bag">School Bag</option>
+        <option value="Travel Bag">Travel Bag</option>
+        <option value="Ladies Bag">Ladies Bag</option>
+        <option value="Office Bag">Office Bag</option>
+      </select>
+
+      <input type="text" id="productImage" placeholder="Image path, e.g. images/new-bag.jpg" required>
+
+      <textarea id="productDescription" placeholder="Product Description" required></textarea>
+
+      <button type="submit">Save Product</button>
+      <button type="button" id="cancelEditBtn" class="cancel-btn">Cancel Edit</button>
+    </form>
+
+    <div id="adminProducts" class="admin-products"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

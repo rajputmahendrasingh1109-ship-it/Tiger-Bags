@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Tiger Bags</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Tiger <span>Bags</span></a>
+      <a href="shop.html" class="shop-btn">Continue Shopping</a>
+    </nav>
+  </header>
+
+  <main class="auth-section">
+    <div class="auth-box">
+      <p class="auth-label">CREATE ACCOUNT</p>
+      <h1>Join Tiger Bags</h1>
+
+      <form id="registerForm">
+        <input type="text" id="registerName" placeholder="Full Name" required>
+        <input type="tel" id="registerPhone" placeholder="Phone Number" required>
+        <input type="email" id="registerEmail" placeholder="Email Address" required>
+        <input type="password" id="registerPassword" placeholder="Create Password" minlength="6" required>
+        <button type="submit">Create Account</button>
+      </form>
+
+      <p id="registerMessage" class="auth-message"></p>
+
+      <p class="auth-switch">
+        Already have an account? <a href="login.html">Login here</a>
+      </p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

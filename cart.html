@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | Tiger Bags</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Tiger <span>Bags</span></a>
+
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li id="guestMenu">
+    <a href="login.html">Login</a>
+</li>
+
+<li id="guestRegister">
+    <a href="register.html">Register</a>
+</li>
+
+<li id="userMenu" style="display:none;">
+  <a href="profile.html" id="userName"></a>
+</li>
+
+<li id="logoutMenu" style="display:none;">
+    <a href="#" onclick="logoutUser()">Logout</a>
+</li>
+        <li><a href="cart.html" class="active">Cart (<span id="cartCount">0</span>)</a></li>
+      </ul>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Register</a></li>
+<li>
+<a href="wishlist.html">
+Wishlist (<span id="wishlistCount">0</span>)
+</a>
+</li>
+      <a href="cart.html" class="shop-btn">Cart (<span id="cartCountDesktop">0</span>)</a>
+    <li>
+<a href="orders.html">
+My Orders
+</a>
+</li>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <div class="section-heading">
+        <p>YOUR ORDER</p>
+        <h1>Shopping Cart</h1>
+      </div>
+
+      <div id="cartItems" class="cart-items"></div>
+
+      <div id="emptyCart" class="empty-cart">
+        <h2>Your cart is empty</h2>
+        <p>Add bags from the shop to place an order.</p>
+        <a href="shop.html" class="primary-btn">Go to Shop</a>
+      </div>
+
+      <div id="cartSummary" class="cart-summary">
+        <h2>Total: ₹<span id="cartTotal">0</span></h2>
+        <button onclick="window.location.href='checkout.html'">
+Proceed to Checkout
+</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Tiger <span>Bags</span></h2>
+    <p>Premium bags for school, travel, office and daily use.</p>
+    <p>© 2026 Tiger Bags. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

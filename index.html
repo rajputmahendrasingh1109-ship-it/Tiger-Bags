@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiger Bags | Premium Bags Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Tiger <span>Bags</span></a>
+<button class="menu-toggle" id="menuToggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+<li id="guestMenu">
+    <a href="login.html">Login</a>
+</li>
+
+<li id="guestRegister">
+    <a href="register.html">Register</a>
+</li>
+
+<li id="userMenu" style="display:none;">
+  <a href="profile.html" id="userName"></a>
+</li>
+
+<li id="logoutMenu" style="display:none;">
+    <a href="#" onclick="logoutUser()">Logout</a>
+</li>
+<li>
+<a href="wishlist.html">
+Wishlist (<span id="wishlistCount">0</span>)
+</a>
+</li>
+      <a href="shop.html" class="shop-btn">Shop Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="tagline">STYLE • QUALITY • COMFORT</p>
+        <h1>Carry Your Style With Tiger Bags</h1>
+        <p>
+          Explore stylish school bags, travel bags, office bags, ladies bags
+          and trolley bags at great prices.
+        </p>
+        <a href="shop.html" class="primary-btn">Explore Collection</a>
+      </div>
+    </section>
+
+    <section class="categories section">
+      <div class="section-heading">
+        <p>SHOP BY CATEGORY</p>
+        <h2>Find Your Perfect Bag</h2>
+      </div>
+
+      <div class="category-grid">
+        <div class="category-card">
+          <div class="category-icon">🎒</div>
+          <h3>School Bags</h3>
+          <p>Comfortable bags for students.</p>
+        </div>
+
+        <div class="category-card">
+          <div class="category-icon">🧳</div>
+          <h3>Travel Bags</h3>
+          <p>Strong and spacious travel bags.</p>
+        </div>
+
+        <div class="category-card">
+          <div class="category-icon">👜</div>
+          <h3>Ladies Bags</h3>
+          <p>Elegant bags for every occasion.</p>
+        </div>
+
+        <div class="category-card">
+          <div class="category-icon">💼</div>
+          <h3>Office Bags</h3>
+          <p>Professional bags for daily work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured section">
+      <div class="section-heading">
+        <p>POPULAR PRODUCTS</p>
+        <h2>Featured Bags</h2>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">
+  <img src="images/school-bag.jpg" alt="Classic School Bag">
+</div>
+          <h3>Classic School Bag</h3>
+          <p class="price">₹799</p>
+          <a href="product.html?name=Classic%20School%20Bag&price=799&category=School%20Bag&description=Comfortable%2C%20spacious%20and%20perfect%20for%20daily%20school%20use." class="view-details-btn">
+  View Details
+</a>
+<button
+  class="add-cart-btn"
+  onclick="addToCart('Classic School Bag', 799, 'images/school-bag.jpg')"
+>
+  Add to Cart
+</button>
+
+          <button onclick="orderOnWhatsApp('Classic School Bag', '799')">
+            Order on WhatsApp
+          </button>
+        </article>
+
+        <article class="product-card">
+         <div class="product-image">
+  <img src="images/duffle-bag.jfif" alt="Travel Duffel Bag">
+</div>
+          <h3>Travel Duffel Bag</h3>
+          <p class="price">₹1,299</p>
+          <a href="product.html?name=Travel%20Duffel%20Bag&price=1299&category=Travel%20Bag&description=Large%20capacity%20bag%20for%20weekend%20trips%20and%20travel." class="view-details-btn">
+  View Details
+</a>
+<button
+  class="add-cart-btn"
+  onclick="addToCart('Travel Duffel Bag', 1299, 'images/duffel-bag.jpg')"
+>
+  Add to Cart
+</button>
+          <button onclick="orderOnWhatsApp('Travel Duffel Bag', '1299')">
+            Order on WhatsApp
+          </button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+  <img src="images/ladies-handbag.jfif" alt="Premium Ladies Handbag">
+</div>
+          <h3>Premium Ladies Handbag</h3>
+          <p class="price">₹999</p>
+          <a href="product.html?name=Premium%20Ladies%20Handbag&price=999&category=Ladies%20Bag&description=Elegant%20handbag%20for%20office%2C%20outings%20and%20special%20occasions." class="view-details-btn">
+  View Details
+</a>
+<button
+  class="add-cart-btn"
+  onclick="addToCart('Premium Ladies Handbag', 999, 'images/ladies-handbag.jpg')"
+>
+  Add to Cart
+</button>
+          <button onclick="orderOnWhatsApp('Premium Ladies Handbag', '999')">
+            Order on WhatsApp
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="offer">
+      <h2>Quality Bags for Every Journey</h2>
+      <p>Contact us on WhatsApp to place your order today.</p>
+      <a href="contact.html" class="primary-btn">Contact Us</a>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Tiger <span>Bags</span></h2>
+    <p>Premium bags for school, travel, office and daily use.</p>
+    <p>© 2026 Tiger Bags. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

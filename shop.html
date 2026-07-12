@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | Tiger Bags</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Tiger <span>Bags</span></a>
+<button class="menu-toggle" id="menuToggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+              <li id="guestMenu">
+    <a href="login.html">Login</a>
+</li>
+
+<li id="guestRegister">
+    <a href="register.html">Register</a>
+</li>
+
+<li id="userMenu" style="display:none;">
+   <a href="profile.html" id="userName"></a>
+</li>
+
+<li id="logoutMenu" style="display:none;">
+    <a href="#" onclick="logoutUser()">Logout</a>
+</li>
+      <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+
+      <a href="cart.html" class="shop-btn">
+  Cart (<span id="cartCountDesktop">0</span>)
+</a>
+<li>
+<a href="wishlist.html">
+Wishlist (<span id="wishlistCount">0</span>)
+</a>
+</li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+    <section class="shop-banner">
+      <p>OUR COLLECTION</p>
+      <h1>Find Your Perfect Bag</h1>
+      <span>School, travel, office and stylish daily-use bags.</span>
+    </section>
+
+    <section class="shop-section">
+      <div class="shop-tools">
+        <input
+  type="text"
+  id="searchInput"
+  placeholder="Search bags..."
+/>
+
+<select id="categoryFilter">
+  <option value="all">All Categories</option>
+  <option value="school">School Bags</option>
+  <option value="travel">Travel Bags</option>
+  <option value="ladies">Ladies Bags</option>
+  <option value="office">Office Bags</option>
+</select>
+      </div>
+
+      <p id="productCount" class="product-count">Showing all products</p>
+
+   <div id="productsContainer" class="products-grid"></div>
+
+      <p id="noProducts" class="no-products">No bags found. Try another search.</p>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Tiger <span>Bags</span></h2>
+    <p>Premium bags for school, travel, office and daily use.</p>
+    <p>© 2026 Tiger Bags. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
